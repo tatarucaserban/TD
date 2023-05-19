@@ -17,7 +17,12 @@ const routes: Array<RouteRecordRaw> = [
     path: '/add',
     name: 'add',
     component: () => import('./components/AddDrum.vue')
-  }
+  },
+  {
+      path: '/drumsTable',
+      name: 'drumsTable',
+      component: () => import('./components/DrumsTable.vue')
+    }
 ];
 
 const router = createRouter({

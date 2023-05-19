@@ -94,7 +94,7 @@
 
   <div v-else>
     <br />
-    <p>Please click on a Drum...</p>
+    <p>Drum details have not been found</p>
   </div>
 </template>
 

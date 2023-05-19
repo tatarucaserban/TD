@@ -27,7 +27,7 @@ class DrumDataService {
   }
 
   findByType(type: string): Promise<any> {
-    return http.get(`/tutorials?type=${type}`);
+    return http.get(`/drums?type=${type}`);
   }
 }
 

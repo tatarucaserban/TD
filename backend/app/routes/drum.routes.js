@@ -6,10 +6,10 @@ module.exports = app => {
   // Create a new Drum
   router.post("/", drums.create);
 
-  // Retrieve all Tutorials
+  // Retrieve all Drums
   router.get("/", drums.findAll);
 
-  // Retrieve all published Tutorials
+  // Retrieve all published Drums
   router.get("/type", drums.findAllDrumType);
 
   // Retrieve a single Drum with id
@@ -21,7 +21,7 @@ module.exports = app => {
   // Delete a Drum with id
   router.delete("/:id", drums.delete);
 
-  // Delete all Tutorials
+  // Delete all Drums
   router.delete("/", drums.deleteAll);
 
   app.use("/api/drums", router);

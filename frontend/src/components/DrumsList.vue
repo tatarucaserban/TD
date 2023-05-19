@@ -5,14 +5,14 @@
         <input
           type="text"
           class="form-control"
-          placeholder="Search by drum category"
+          placeholder="Search by drum type"
           v-model="drum_type"
         />
         <div class="input-group-append">
           <button
             class="btn btn-outline-secondary"
             type="button"
-            @click="drum_type"
+            @click="searchType"
           >
             Search
           </button>
@@ -32,7 +32,6 @@
           {{ drum.name }}
         </li>
       </ul>
-
       <button class="m-3 btn btn-sm btn-danger" @click="removeAllDrums">
         Remove All
       </button>
